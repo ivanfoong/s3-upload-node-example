@@ -1,0 +1,14 @@
+{
+  "name": "s3-upload-node-example",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "server": "minio server ./data",
+    "upload": "node upload.js",
+    "setup": "brew install minio/stable/minio"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.230.1",
+    "dotenv": "^5.0.1"
+  }
+}
